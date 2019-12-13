@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.minicup.launchmode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".stantard.StandardAActivity"
+            android:label="StandardAActivity" />
+        <activity
+            android:name=".stantard.StandardBActivity"
+            android:label="StandardBActivity" />
+        <activity
+            android:name=".stantard.StandardCActivity"
+            android:label="StandardCActivity" />
+        <activity
+            android:name=".stantard.StandardDActivity"
+            android:label="StandardDActivity" />
+        <activity
+            android:name=".single_top.SingleTopAActivity"
+            android:label="SingleTopAActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".single_top.SingleTopBActivity"
+            android:label="SingleTopBActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".single_task.SingleTaskAActivity"
+            android:label="SingleTaskAActivity"
+            android:taskAffinity="com.minicup.launchmode.A"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".single_task.SingleTaskBActivity"
+            android:label="SingleTaskBActivity"
+            android:taskAffinity="com.minicup.launchmode.B"
+            android:launchMode="singleTask" />
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
